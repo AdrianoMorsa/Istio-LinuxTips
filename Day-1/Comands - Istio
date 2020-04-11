@@ -21,3 +21,7 @@ HTML
 # kubectl label namespace default istio-injection=enabled
 
 # kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+
+#PORT FOWARD
+#ubectl port-forward svc/productpage 9080:9080 -n defaul
+t --address=0.0.0.0
