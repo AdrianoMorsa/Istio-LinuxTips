@@ -1,0 +1,11 @@
+# vim destination-rule-enable-mtls-service.yaml
+apiVersion: "networking.istio.io/v1alpha3"
+kind: "DestinationRule"
+metadata:
+  name: "httpbin"
+  namespace: strigus
+spec:
+  host: "httpbin.strigus.svc.cluster.local"
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL

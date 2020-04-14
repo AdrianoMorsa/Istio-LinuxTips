@@ -1,0 +1,11 @@
+# vim policy-enable-mtls-service.yaml
+apiVersion: "authentication.istio.io/v1alpha1"
+kind: "Policy"
+metadata:
+  name: "httpbin"
+  namespace: strigus
+spec:
+  targets:
+  - name: httpbin
+  peers:
+  - mtls: {}

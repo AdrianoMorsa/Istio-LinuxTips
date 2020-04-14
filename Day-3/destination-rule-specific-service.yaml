@@ -1,0 +1,16 @@
+# vim destination-rule-specific-service.yaml
+apiVersion: "networking.istio.io/v1alpha3"
+kind: "DestinationRule"
+metadata:
+  name: "httpbin"
+  namespace: strigus
+spec:
+  host: httpbin.strigus.svc.cluster.local
+  trafficPolicy:
+    tls:
+      mode: DISABLE
+    portLevelSettings:
+    - port:
+        number: 8080
+      tls:
+        mode: ISTIO_MUTUAL
