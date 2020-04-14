@@ -1,0 +1,42 @@
+ML
+# kubectl apply -f deployment-httpbin-v1.yaml
+
+# kubectl apply -f deployment-httpbin-v2.yaml
+
+# kubectl apply -f service-httpbin.yaml
+
+# kubectl apply -f deployment-sleep.yaml
+
+# kubectl apply -f deployment-sleep.yaml
+
+# kubectl apply -f virtual-service-httpbin.yaml
+
+# kubectl apply -f destination-rule-httpbin.yaml
+
+# kubectl get pods
+
+# kubectl exec -ti sleep-674f75ff4d-5bsnf -c sleep -- sh -c 'curl http://httpbin:8000/headers'
+
+# kubectl logs httpbin-v1-b9985cc7d-t5f4z  httpbin
+
+# kubectl logs httpbin-v2-5cdb74d4c7-2lc27 httpbin
+
+# kubectl apply -f mirroring-httpbin.yaml
+
+# kubectl get virtualservices.networking.istio.io
+
+# vim mirroring-httpbin.yaml
+
+# kubectl get virtualservices.networking.istio.io httpbin -o yaml
+
+# kubectl exec -ti sleep-674f75ff4d-5bsnf -c sleep -- sh -c 'curl http://httpbin:8000/headers'
+
+# kubectl logs httpbin-v1-b9985cc7d-t5f4z  httpbin
+
+# kubectl logs httpbin-v2-5cdb74d4c7-2lc27 httpbin
+
+# kubectl exec -ti sleep-674f75ff4d-5bsnf -c sleep -- sh -c 'curl http://httpbin:8000/headers'
+
+# kubectl logs httpbin-v2-5cdb74d4c7-2lc27 httpbin
+
+# kubectl logs httpbin-v1-b9985cc7d-t5f4z  httpbin
